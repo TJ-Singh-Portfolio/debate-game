@@ -1,0 +1,42 @@
+.forms {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.forms__box {
+  background-color: #cfe7ea;
+  border-color: #fff;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.forms__form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.forms__heading {
+  margin: 5px auto 0px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.forms__fieldset {
+  border: none;
+}
+
+.forms__input {
+  width: 300px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.forms__button {
+  background: #8e9787;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+}

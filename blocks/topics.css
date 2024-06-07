@@ -1,0 +1,23 @@
+.topics {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+}
+
+.topics__heading {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.topics__list {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.topics__item {
+  list-style: none;
+  background-color: aliceblue;
+  margin-right: 15px;
+}

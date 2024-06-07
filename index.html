@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Debate Game" />
+    <meta name="author" content="TJ Singh" />
+    <meta name="keywords" content="Debate Game" />
+    <title>The Debate Game</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__content">
+        <header class="header">
+          <h1 class="page__title">The Debate Game</h1>
+        </header>
+
+        <main class="content">
+          <section class="forms">
+            <div class="forms__box">
+              <form class="forms__form" name="topic-form">
+                <h3 class="forms__heading">Add Topics</h3>
+                <fieldset class="forms__fieldset">
+                  <input
+                    type="text"
+                    class="forms__input forms__input-topic"
+                    id="input-topic"
+                    name="topic"
+                    placeholder="Add Your Topic Here"
+                    required
+                    minlength="1"
+                    maxlength="100"
+                  />
+                </fieldset>
+                <button class="forms__button" type="submit">Add</button>
+              </form>
+            </div>
+
+            <div class="forms__box">
+              <form class="forms__form" name="player-form">
+                <h3 class="forms__heading">Add Players</h3>
+                <fieldset class="forms__fieldset">
+                  <input
+                    type="text"
+                    class="forms__input forms__input-player"
+                    id="input-player"
+                    name="player"
+                    placeholder="Player Name"
+                    required
+                    minlength="1"
+                    maxlength="30"
+                  />
+                </fieldset>
+                <button class="forms__button" type="submit">Add</button>
+              </form>
+            </div>
+          </section>
+          <section class="topics">
+            <h2 class="topics__heading">Topics</h2>
+            <ul class="topics__list">
+              <template id="topic-item">
+                <li class="topics__item"></li>
+              </template>
+            </ul>
+          </section>
+          <section class="players">
+            <h2 class="players__heading">Players</h2>
+            <ul class="players__list">
+              <template id="player-item">
+                <li class="players__item"></li>
+              </template>
+            </ul>
+            <!-- <button class="players__button" type="button">
+              Start the game.
+            </button> -->
+          </section>
+          <section class="arena">
+            <h2 class="arena__heading">The Arena</h2>
+            <div class="arena__container">
+              <div class="arena__topic-container">
+                <p class="arena__topic">Select Your Topic</p>
+                <span class="arena__topic-span"></span>
+              </div>
+              <div class="arena__player-one-container">
+                <p class="arena__player-one">Select Player One</p>
+                <span class="arena__player-one-span"></span>
+              </div>
+              <div class="arena__player-two-container">
+                <p class="arena__player-two">Select Player Two</p>
+                <span class="arena__player-two-span"></span>
+              </div>
+              <p class="arena__question-text">Who Won?</p>
+              <div class="arena__results">
+                <button class="arena__select-player-one" type="button">
+                  Player One
+                </button>
+                <button class="arena__select-player-two" type="button">
+                  Player Two
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="timers">
+            <h2 class="timers__heading">Timers</h2>
+            <div class="timers__container">
+              <div class="timers__instance timers__instance-thirty-seconds">
+                <p class="timers__text">0:30</p>
+                <button class="timers__button" type="button">Add 0:30</button>
+              </div>
+              <div class="timers__instance timers__instance-two-minutes">
+                <p class="timers__text">2:00</p>
+                <button class="timers__button" type="button">Add 2:00</button>
+              </div>
+            </div>
+          </section>
+          <section class="history">
+            <h2 class="history__heading">Game History</h2>
+            <div class="history__container">
+              <ul class="history__list">
+                <template id="history-item">
+                  <li class="history__entry"></li>
+                </template>
+              </ul>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">The Debate Game</footer>
+      </div>
+    </div>
+    <script src="./pages/index.js" type="module"></script>
+  </body>
+</html>

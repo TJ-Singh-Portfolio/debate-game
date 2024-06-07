@@ -1,0 +1,23 @@
+.players {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+}
+
+.players__heading {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.players__list {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.players__item {
+  list-style: none;
+  margin-right: 15px;
+  background-color: aliceblue;
+}

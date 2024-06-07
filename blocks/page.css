@@ -1,0 +1,14 @@
+.page {
+  background-color: #d3cbcb;
+}
+
+.page__title {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.page__content {
+  padding: 10px;
+}

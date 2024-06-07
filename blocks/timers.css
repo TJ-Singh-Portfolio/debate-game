@@ -1,0 +1,14 @@
+.timers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timers__heading {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.timers__container {
+  display: flex;
+}

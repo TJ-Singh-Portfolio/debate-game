@@ -1,0 +1,22 @@
+.arena {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.arena__heading {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.arena__topic-container {
+  background-color: #fff;
+}
+
+.arena__question-text {
+  margin: 10px 0 10px 35px;
+}
+
+.arena__results {
+  display: flex;
+}
